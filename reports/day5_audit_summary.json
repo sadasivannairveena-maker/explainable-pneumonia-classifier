@@ -1,0 +1,57 @@
+{
+  "n": 872,
+  "checkpoint_epoch": 4,
+  "threshold": 0.8998045338357019,
+  "border_fraction": 0.05,
+  "border_pixels": 9372,
+  "center_pixels": 9409,
+  "mask_fill": "ImageNet mean RGB, represented as zero after normalization",
+  "metrics": {
+    "baseline": {
+      "roc_auc": 0.9963055251005017,
+      "sensitivity": 0.9543307086614173,
+      "specificity": 0.9746835443037974,
+      "tn": 231,
+      "fp": 6,
+      "fn": 29,
+      "tp": 606,
+      "mean_absolute_probability_change": 0.0,
+      "decision_flips": 0
+    },
+    "border": {
+      "roc_auc": 0.9943586165653344,
+      "sensitivity": 0.9653543307086614,
+      "specificity": 0.9704641350210971,
+      "tn": 230,
+      "fp": 7,
+      "fn": 22,
+      "tp": 613,
+      "mean_absolute_probability_change": 0.029657410457730293,
+      "decision_flips": 8
+    },
+    "center": {
+      "roc_auc": 0.9937805242699094,
+      "sensitivity": 0.75748031496063,
+      "specificity": 0.9957805907172996,
+      "tn": 236,
+      "fp": 1,
+      "fn": 154,
+      "tp": 481,
+      "mean_absolute_probability_change": 0.07105895131826401,
+      "decision_flips": 144
+    }
+  },
+  "mean_border_minus_center_absolute_change": -0.041401538997888565,
+  "paired_bootstrap_95pct_ci": [
+    -0.049283817970575114,
+    -0.034116818443573824
+  ],
+  "baseline_day3_max_absolute_probability_difference": 8.498594528116854e-08,
+  "interpretation_limits": [
+    "Occlusion creates out-of-distribution inputs and can affect predictions for reasons other than shortcuts.",
+    "A central square is not a lung segmentation mask; border and center are only approximate location controls.",
+    "Averaging absolute changes does not reveal whether changes help or harm the prediction.",
+    "Test set reused for exploratory audit after Day 3 evaluation; do not tune model based on audit outcomes.",
+    "Patient-level independence and external clinical validity remain unverified."
+  ]
+}

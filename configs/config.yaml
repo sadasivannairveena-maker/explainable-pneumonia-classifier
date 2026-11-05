@@ -1,0 +1,4 @@
+seed: 42
+raw_dir: /kaggle/input/chest-xray-pneumonia/chest_xray
+manifest_dir: data/manifests
+report_dir: reports

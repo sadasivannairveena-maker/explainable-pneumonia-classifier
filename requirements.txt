@@ -1,0 +1,6 @@
+torch==2.6.0
+torchvision==0.21.0
+gradio==5.49.1
+numpy==2.2.6
+Pillow==11.1.0
+matplotlib==3.10.0
