@@ -4,3 +4,8 @@ gradio==5.49.1
 numpy==2.2.6
 Pillow==11.1.0
 matplotlib==3.10.0
+scikit-learn
+pandas
+shap
+PyYAML
+tqdm
